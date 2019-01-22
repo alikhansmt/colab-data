@@ -82,7 +82,6 @@ class Solver(object):
                 optim.zero_grad()
                 outputs = model(inputs)
                 
-                print(outputs.shape)
                 
                 loss = 0
                 for s in range(inputs.size()[0]):
